@@ -1,0 +1,249 @@
+﻿Mabinogi.g.en.resources:stringresources.baml,system:String_1:System.String.$Content,None,True,True,,A problem caused this program to stop working.
+Mabinogi.g.en.resources:stringresources.baml,system:String_2:System.String.$Content,None,True,True,,This program has terminated.
+Mabinogi.g.en.resources:stringresources.baml,system:String_3:System.String.$Content,None,True,True,,This program is terminating.{0}Do you want to display information about this problem?.
+Mabinogi.g.en.resources:stringresources.baml,system:String_4:System.String.$Content,None,True,True,,Local Version and Server Version does not same. Are you sure you want to continue?
+Mabinogi.g.en.resources:stringresources.baml,system:String_5:System.String.$Content,None,True,True,,Version value is invalid.
+Mabinogi.g.en.resources:stringresources.baml,system:String_6:System.String.$Content,None,True,True,,Server version value does not to be smaller than Local version value.
+Mabinogi.g.en.resources:stringresources.baml,system:String_7:System.String.$Content,None,True,True,,Patch Server is offline.
+Mabinogi.g.en.resources:stringresources.baml,system:String_8:System.String.$Content,None,True,True,,Patch Server is currently down. Please try again later.
+Mabinogi.g.en.resources:stringresources.baml,system:String_9:System.String.$Content,None,True,True,,"Saving password in local makes security risk, such as account hacking."
+Mabinogi.g.en.resources:stringresources.baml,system:String_10:System.String.$Content,None,True,True,,Download successfully.
+Mabinogi.g.en.resources:stringresources.baml,system:String_11:System.String.$Content,None,True,True,,Download failure.
+Mabinogi.g.en.resources:stringresources.baml,system:String_12:System.String.$Content,None,True,True,,Initializing...
+Mabinogi.g.en.resources:stringresources.baml,system:String_13:System.String.$Content,None,True,True,,Create Temporary directory...
+Mabinogi.g.en.resources:stringresources.baml,system:String_14:System.String.$Content,None,True,True,,Download failure.
+Mabinogi.g.en.resources:stringresources.baml,system:String_15:System.String.$Content,None,True,True,,Checking {0}.txt...
+Mabinogi.g.en.resources:stringresources.baml,system:String_16:System.String.$Content,None,True,True,,Downloading language.pack
+Mabinogi.g.en.resources:stringresources.baml,system:String_17:System.String.$Content,None,True,True,,Downloading partial patch file and check md5sum...
+Mabinogi.g.en.resources:stringresources.baml,system:String_18:System.String.$Content,None,True,True,,Downloading file. ({0} / {1})
+Mabinogi.g.en.resources:stringresources.baml,system:String_19:System.String.$Content,None,True,True,,Merging...
+Mabinogi.g.en.resources:stringresources.baml,system:String_20:System.String.$Content,None,True,True,,Merging partial patch file. ({0} / {1})
+Mabinogi.g.en.resources:stringresources.baml,system:String_21:System.String.$Content,None,True,True,,Extracting...
+Mabinogi.g.en.resources:stringresources.baml,system:String_22:System.String.$Content,None,True,True,,Extracting file. ({0} / {1})
+Mabinogi.g.en.resources:errorreporter.baml,Window_1:MabiLauncher.ErrorReporter.$Content,None,True,True,,#Grid_1;
+Mabinogi.g.en.resources:errorreporter.baml,Window_1:System.Windows.Window.Title,Title,True,True,,ErrorReporter
+Mabinogi.g.en.resources:errorreporter.baml,Window_1:System.Windows.FrameworkElement.Height,None,False,True,,320
+Mabinogi.g.en.resources:errorreporter.baml,Window_1:System.Windows.FrameworkElement.Width,None,False,True,,640
+Mabinogi.g.en.resources:errorreporter.baml,Window_1:System.Windows.Window.ShowInTaskbar,None,False,True,,False
+Mabinogi.g.en.resources:errorreporter.baml,Window_1:System.Windows.Window.Topmost,None,False,True,,True
+Mabinogi.g.en.resources:errorreporter.baml,ImageBrush_1:System.Windows.Media.ImageBrush.$Content,None,False,True,,
+Mabinogi.g.en.resources:errorreporter.baml,ImageBrush_1:System.Windows.Media.TileBrush.Stretch,None,True,False,,UniformToFill
+Mabinogi.g.en.resources:errorreporter.baml,ImageBrush_1:System.Windows.Media.TileBrush.AlignmentX,None,True,False,,Left
+Mabinogi.g.en.resources:errorreporter.baml,ImageBrush_1:System.Windows.Media.TileBrush.AlignmentY,None,True,False,,Top
+Mabinogi.g.en.resources:errorreporter.baml,Grid_1:System.Windows.FrameworkElement.Margin,None,False,True,,10
+Mabinogi.g.en.resources:errorreporter.baml,Icon:System.Windows.Controls.Image.$Content,None,False,True,,
+Mabinogi.g.en.resources:errorreporter.baml,Icon:System.Windows.FrameworkElement.Height,None,False,True,,64
+Mabinogi.g.en.resources:errorreporter.baml,Icon:System.Windows.FrameworkElement.Margin,None,False,True,,0
+Mabinogi.g.en.resources:errorreporter.baml,Icon:System.Windows.FrameworkElement.Width,None,False,True,,64
+Mabinogi.g.en.resources:errorreporter.baml,Message:System.Windows.Controls.TextBlock.$Content,Text,True,True,,
+Mabinogi.g.en.resources:errorreporter.baml,Message:System.Windows.FrameworkElement.Margin,None,False,True,,"10,0,0,0"
+Mabinogi.g.en.resources:errorreporter.baml,Message:System.Windows.Controls.TextBlock.TextWrapping,None,False,True,,Wrap
+Mabinogi.g.en.resources:errorreporter.baml,Message:System.Windows.Controls.TextBlock.Background,None,False,True,,\#99FFFFFF
+Mabinogi.g.en.resources:errorreporter.baml,Message:System.Windows.Controls.Grid.Column,None,False,True,,1
+Mabinogi.g.en.resources:errorreporter.baml,Detail:System.Windows.Controls.TextBox.$Content,Text,True,True,,
+Mabinogi.g.en.resources:errorreporter.baml,Detail:System.Windows.FrameworkElement.HorizontalAlignment,None,False,True,,Stretch
+Mabinogi.g.en.resources:errorreporter.baml,Detail:System.Windows.FrameworkElement.Margin,None,False,True,,"0,10"
+Mabinogi.g.en.resources:errorreporter.baml,Detail:System.Windows.FrameworkElement.VerticalAlignment,None,False,True,,Stretch
+Mabinogi.g.en.resources:errorreporter.baml,Detail:System.Windows.Controls.Primitives.TextBoxBase.VerticalScrollBarVisibility,Text,True,False,,Auto
+Mabinogi.g.en.resources:errorreporter.baml,Detail:System.Windows.Controls.Primitives.TextBoxBase.AcceptsReturn,None,False,True,,True
+Mabinogi.g.en.resources:errorreporter.baml,Detail:System.Windows.Controls.Control.FontFamily,Font,True,True,,Courier New
+Mabinogi.g.en.resources:errorreporter.baml,Detail:System.Windows.Controls.TextBox.TextWrapping,None,False,True,,WrapWithOverflow
+Mabinogi.g.en.resources:errorreporter.baml,Detail:System.Windows.Controls.Grid.Row,None,False,True,,1
+Mabinogi.g.en.resources:errorreporter.baml,Detail:System.Windows.Controls.Grid.ColumnSpan,None,False,True,,2
+Mabinogi.g.en.resources:errorreporter.baml,Detail:System.Windows.Controls.Control.Background,None,False,True,,\#99FFFFFF
+Mabinogi.g.en.resources:errorreporter.baml,Continue:System.Windows.Controls.Button.$Content,Button,True,True,,
+Mabinogi.g.en.resources:errorreporter.baml,Continue:System.Windows.Controls.ContentControl.Content,Button,True,True,,Continue
+Mabinogi.g.en.resources:errorreporter.baml,Continue:System.Windows.FrameworkElement.Height,None,False,True,,23
+Mabinogi.g.en.resources:errorreporter.baml,Continue:System.Windows.FrameworkElement.HorizontalAlignment,None,False,True,,Right
+Mabinogi.g.en.resources:errorreporter.baml,Continue:System.Windows.FrameworkElement.Margin,None,False,True,,"0,0,80,0"
+Mabinogi.g.en.resources:errorreporter.baml,Continue:System.Windows.FrameworkElement.VerticalAlignment,None,False,True,,Bottom
+Mabinogi.g.en.resources:errorreporter.baml,Continue:System.Windows.FrameworkElement.Width,None,False,True,,75
+Mabinogi.g.en.resources:errorreporter.baml,Continue:System.Windows.Controls.Button.IsDefault,None,False,True,,True
+Mabinogi.g.en.resources:errorreporter.baml,Continue:System.Windows.Controls.Grid.Row,None,False,True,,2
+Mabinogi.g.en.resources:errorreporter.baml,Continue:System.Windows.Controls.Grid.Column,None,False,True,,1
+Mabinogi.g.en.resources:errorreporter.baml,Exit:System.Windows.Controls.Button.$Content,Button,True,True,,
+Mabinogi.g.en.resources:errorreporter.baml,Exit:System.Windows.Controls.ContentControl.Content,Button,True,True,,Exit
+Mabinogi.g.en.resources:errorreporter.baml,Exit:System.Windows.FrameworkElement.Height,None,False,True,,23
+Mabinogi.g.en.resources:errorreporter.baml,Exit:System.Windows.FrameworkElement.HorizontalAlignment,None,False,True,,Right
+Mabinogi.g.en.resources:errorreporter.baml,Exit:System.Windows.FrameworkElement.Margin,None,False,True,,0
+Mabinogi.g.en.resources:errorreporter.baml,Exit:System.Windows.FrameworkElement.VerticalAlignment,None,False,True,,Bottom
+Mabinogi.g.en.resources:errorreporter.baml,Exit:System.Windows.FrameworkElement.Width,None,False,True,,75
+Mabinogi.g.en.resources:errorreporter.baml,Exit:System.Windows.Controls.Grid.Row,None,False,True,,2
+Mabinogi.g.en.resources:errorreporter.baml,Exit:System.Windows.Controls.Grid.Column,None,False,True,,1
+Mabinogi.g.en.resources:mainwindow.baml,Window_1:MabiLauncher.MainWindow.$Content,None,True,True,,#TabControl_1;
+Mabinogi.g.en.resources:mainwindow.baml,Window_1:System.Windows.Window.Title,Title,True,True,,MabiLauncher Plus
+Mabinogi.g.en.resources:mainwindow.baml,Window_1:System.Windows.FrameworkElement.Width,None,False,True,,770
+Mabinogi.g.en.resources:mainwindow.baml,Window_1:System.Windows.FrameworkElement.Height,None,False,True,,Auto
+Mabinogi.g.en.resources:mainwindow.baml,Window_1:System.Windows.Window.Icon,None,False,True,,icon.ico
+Mabinogi.g.en.resources:mainwindow.baml,Window_1:System.Windows.Window.SizeToContent,None,False,True,,Height
+Mabinogi.g.en.resources:mainwindow.baml,Window_1:System.Windows.Window.WindowStartupLocation,None,False,True,,CenterScreen
+Mabinogi.g.en.resources:mainwindow.baml,Window_1:System.Windows.Window.ResizeMode,None,False,True,,NoResize
+Mabinogi.g.en.resources:mainwindow.baml,Window_1:System.Windows.Controls.Control.Foreground,None,False,True,,\#FF000000
+Mabinogi.g.en.resources:mainwindow.baml,ImageBrush_1:System.Windows.Media.ImageBrush.$Content,None,False,True,,
+Mabinogi.g.en.resources:mainwindow.baml,ImageBrush_1:System.Windows.Media.TileBrush.Stretch,None,True,False,,UniformToFill
+Mabinogi.g.en.resources:mainwindow.baml,ImageBrush_1:System.Windows.Media.TileBrush.AlignmentX,None,True,False,,Left
+Mabinogi.g.en.resources:mainwindow.baml,ImageBrush_1:System.Windows.Media.TileBrush.AlignmentY,None,True,False,,Top
+Mabinogi.g.en.resources:mainwindow.baml,TabControl_1:System.Windows.Controls.TabControl.$Content,None,False,True,,#TabItem_1;#TabItem_2;
+Mabinogi.g.en.resources:mainwindow.baml,TabControl_1:System.Windows.FrameworkElement.VerticalAlignment,None,False,True,,Stretch
+Mabinogi.g.en.resources:mainwindow.baml,TabControl_1:System.Windows.Controls.Control.Background,None,False,True,,\#99F0F0F0
+Mabinogi.g.en.resources:mainwindow.baml,TabControl_1:System.Windows.FrameworkElement.Margin,None,False,True,,5
+Mabinogi.g.en.resources:mainwindow.baml,TabItem_1:System.Windows.Controls.TabItem.$Content,Text,True,True,,#Grid_1;
+Mabinogi.g.en.resources:mainwindow.baml,TabItem_1:System.Windows.Controls.HeaderedContentControl.Header,Label,True,True,,Launcher
+Mabinogi.g.en.resources:mainwindow.baml,Grid_1:System.Windows.UIElement.IsEnabled,None,False,True,,False
+Mabinogi.g.en.resources:mainwindow.baml,expander:System.Windows.Controls.Expander.$Content,None,False,True,,#webBrowser;
+Mabinogi.g.en.resources:mainwindow.baml,expander:System.Windows.Controls.HeaderedContentControl.Header,Label,True,True,,Official Info
+Mabinogi.g.en.resources:mainwindow.baml,expander:System.Windows.FrameworkElement.HorizontalAlignment,None,False,True,,Stretch
+Mabinogi.g.en.resources:mainwindow.baml,expander:System.Windows.Controls.Grid.ColumnSpan,None,False,True,,6
+Mabinogi.g.en.resources:mainwindow.baml,webBrowser:System.Windows.Controls.WebBrowser.$Content,None,True,True,,
+Mabinogi.g.en.resources:mainwindow.baml,webBrowser:System.Windows.FrameworkElement.Margin,None,False,True,,"5,0,5,0"
+Mabinogi.g.en.resources:mainwindow.baml,webBrowser:System.Windows.FrameworkElement.VerticalAlignment,None,False,True,,Stretch
+Mabinogi.g.en.resources:mainwindow.baml,webBrowser:System.Windows.UIElement.IsManipulationEnabled,None,False,True,,True
+Mabinogi.g.en.resources:mainwindow.baml,webBrowser:System.Windows.FrameworkElement.ForceCursor,None,False,True,,True
+Mabinogi.g.en.resources:mainwindow.baml,webBrowser:System.Windows.Controls.ScrollViewer.VerticalScrollBarVisibility,None,True,False,,Disabled
+Mabinogi.g.en.resources:mainwindow.baml,webBrowser:System.Windows.FrameworkElement.Height,None,False,True,,410
+Mabinogi.g.en.resources:mainwindow.baml,webBrowser:System.Windows.UIElement.OpacityMask,None,False,True,,\#FFFFFFFF
+Mabinogi.g.en.resources:mainwindow.baml,textBlockLocale:System.Windows.Controls.TextBlock.$Content,Text,True,True,,
+Mabinogi.g.en.resources:mainwindow.baml,textBlockLocale:System.Windows.Controls.Grid.Row,None,False,True,,1
+Mabinogi.g.en.resources:mainwindow.baml,textBlockLocale:System.Windows.Controls.TextBlock.TextWrapping,None,False,True,,Wrap
+Mabinogi.g.en.resources:mainwindow.baml,textBlockLocale:System.Windows.Controls.TextBlock.Text,Text,True,True,,Locale :
+Mabinogi.g.en.resources:mainwindow.baml,textBlockLocale:System.Windows.FrameworkElement.HorizontalAlignment,None,False,True,,Right
+Mabinogi.g.en.resources:mainwindow.baml,textBlockLocale:System.Windows.FrameworkElement.VerticalAlignment,None,False,True,,Center
+Mabinogi.g.en.resources:mainwindow.baml,textBlockLocale:System.Windows.FrameworkElement.Margin,None,False,True,,"0,4"
+Mabinogi.g.en.resources:mainwindow.baml,comboBox:System.Windows.Controls.ComboBox.$Content,ComboBox,True,True,,
+Mabinogi.g.en.resources:mainwindow.baml,comboBox:System.Windows.Controls.Grid.Column,None,False,True,,1
+Mabinogi.g.en.resources:mainwindow.baml,comboBox:System.Windows.Controls.Grid.Row,None,False,True,,1
+Mabinogi.g.en.resources:mainwindow.baml,comboBox:System.Windows.Controls.ItemsControl.DisplayMemberPath,ComboBox,True,True,,@country
+Mabinogi.g.en.resources:mainwindow.baml,comboBox:System.Windows.FrameworkElement.ToolTip,ToolTip,True,True,,Specify the country or region you want to connect to server.
+Mabinogi.g.en.resources:mainwindow.baml,comboBox:System.Windows.FrameworkElement.Margin,None,False,True,,1
+Mabinogi.g.en.resources:mainwindow.baml,textBlockUserId:System.Windows.Controls.TextBlock.$Content,Text,True,True,,
+Mabinogi.g.en.resources:mainwindow.baml,textBlockUserId:System.Windows.Controls.Grid.Row,None,False,True,,2
+Mabinogi.g.en.resources:mainwindow.baml,textBlockUserId:System.Windows.Controls.TextBlock.Text,Text,True,True,,User ID :
+Mabinogi.g.en.resources:mainwindow.baml,textBlockUserId:System.Windows.FrameworkElement.VerticalAlignment,None,False,True,,Center
+Mabinogi.g.en.resources:mainwindow.baml,textBlockUserId:System.Windows.FrameworkElement.HorizontalAlignment,None,False,True,,Right
+Mabinogi.g.en.resources:mainwindow.baml,textBlockUserId:System.Windows.FrameworkElement.Margin,None,False,True,,"0,4"
+Mabinogi.g.en.resources:mainwindow.baml,idBox:System.Windows.Controls.TextBox.$Content,Text,True,True,,
+Mabinogi.g.en.resources:mainwindow.baml,idBox:System.Windows.Controls.Grid.Column,None,False,True,,1
+Mabinogi.g.en.resources:mainwindow.baml,idBox:System.Windows.Controls.Grid.Row,None,False,True,,2
+Mabinogi.g.en.resources:mainwindow.baml,idBox:System.Windows.Controls.TextBox.TextWrapping,None,False,True,,Wrap
+Mabinogi.g.en.resources:mainwindow.baml,idBox:System.Windows.FrameworkElement.Margin,None,False,True,,1
+Mabinogi.g.en.resources:mainwindow.baml,textBlockPassword:System.Windows.Controls.TextBlock.$Content,Text,True,True,,
+Mabinogi.g.en.resources:mainwindow.baml,textBlockPassword:System.Windows.Controls.TextBlock.Text,Text,True,True,,Password :
+Mabinogi.g.en.resources:mainwindow.baml,textBlockPassword:System.Windows.FrameworkElement.VerticalAlignment,None,False,True,,Center
+Mabinogi.g.en.resources:mainwindow.baml,textBlockPassword:System.Windows.FrameworkElement.HorizontalAlignment,None,False,True,,Right
+Mabinogi.g.en.resources:mainwindow.baml,textBlockPassword:System.Windows.Controls.Grid.Row,None,False,True,,3
+Mabinogi.g.en.resources:mainwindow.baml,passwordBox:System.Windows.Controls.PasswordBox.$Content,Text,True,True,,
+Mabinogi.g.en.resources:mainwindow.baml,passwordBox:System.Windows.Controls.Grid.Column,None,False,True,,1
+Mabinogi.g.en.resources:mainwindow.baml,passwordBox:System.Windows.Controls.Grid.Row,None,False,True,,3
+Mabinogi.g.en.resources:mainwindow.baml,passwordBox:System.Windows.FrameworkElement.Margin,None,False,True,,1
+Mabinogi.g.en.resources:mainwindow.baml,textBlockServer:System.Windows.Controls.TextBlock.$Content,Text,True,True,,
+Mabinogi.g.en.resources:mainwindow.baml,textBlockServer:System.Windows.Controls.Grid.Column,None,False,True,,2
+Mabinogi.g.en.resources:mainwindow.baml,textBlockServer:System.Windows.Controls.Grid.Row,None,False,True,,1
+Mabinogi.g.en.resources:mainwindow.baml,textBlockServer:System.Windows.Controls.TextBlock.Text,Text,True,True,,Server Version :
+Mabinogi.g.en.resources:mainwindow.baml,textBlockServer:System.Windows.FrameworkElement.HorizontalAlignment,None,False,True,,Right
+Mabinogi.g.en.resources:mainwindow.baml,textBlockServer:System.Windows.FrameworkElement.VerticalAlignment,None,False,True,,Center
+Mabinogi.g.en.resources:mainwindow.baml,textBoxServer:System.Windows.Controls.TextBox.$Content,Text,True,True,,
+Mabinogi.g.en.resources:mainwindow.baml,textBoxServer:System.Windows.Controls.Grid.Column,None,False,True,,3
+Mabinogi.g.en.resources:mainwindow.baml,textBoxServer:System.Windows.Controls.Grid.Row,None,False,True,,1
+Mabinogi.g.en.resources:mainwindow.baml,textBoxServer:System.Windows.Controls.TextBox.Text,Text,True,True,,1
+Mabinogi.g.en.resources:mainwindow.baml,textBoxServer:System.Windows.Controls.Grid.ColumnSpan,None,False,True,,1
+Mabinogi.g.en.resources:mainwindow.baml,textBoxServer:System.Windows.FrameworkElement.Margin,None,False,True,,1
+Mabinogi.g.en.resources:mainwindow.baml,textBlockLocal:System.Windows.Controls.TextBlock.$Content,Text,True,True,,
+Mabinogi.g.en.resources:mainwindow.baml,textBlockLocal:System.Windows.Controls.Grid.Column,None,False,True,,2
+Mabinogi.g.en.resources:mainwindow.baml,textBlockLocal:System.Windows.Controls.Grid.Row,None,False,True,,2
+Mabinogi.g.en.resources:mainwindow.baml,textBlockLocal:System.Windows.Controls.TextBlock.Text,Text,True,True,,Local Version :
+Mabinogi.g.en.resources:mainwindow.baml,textBlockLocal:System.Windows.FrameworkElement.VerticalAlignment,None,False,True,,Center
+Mabinogi.g.en.resources:mainwindow.baml,textBlockLocal:System.Windows.FrameworkElement.HorizontalAlignment,None,False,True,,Right
+Mabinogi.g.en.resources:mainwindow.baml,textBoxLocal:System.Windows.Controls.TextBox.$Content,Text,True,True,,
+Mabinogi.g.en.resources:mainwindow.baml,textBoxLocal:System.Windows.Controls.Grid.Column,None,False,True,,3
+Mabinogi.g.en.resources:mainwindow.baml,textBoxLocal:System.Windows.Controls.Grid.Row,None,False,True,,2
+Mabinogi.g.en.resources:mainwindow.baml,textBoxLocal:System.Windows.Controls.TextBox.Text,Text,True,True,,0
+Mabinogi.g.en.resources:mainwindow.baml,textBoxLocal:System.Windows.Controls.Grid.ColumnSpan,None,False,True,,1
+Mabinogi.g.en.resources:mainwindow.baml,textBoxLocal:System.Windows.FrameworkElement.Margin,None,False,True,,1
+Mabinogi.g.en.resources:mainwindow.baml,checkBoxSavePassword:System.Windows.Controls.CheckBox.$Content,CheckBox,True,True,,
+Mabinogi.g.en.resources:mainwindow.baml,checkBoxSavePassword:System.Windows.Controls.ContentControl.Content,CheckBox,True,True,,Save Password
+Mabinogi.g.en.resources:mainwindow.baml,checkBoxSavePassword:System.Windows.Controls.Grid.Column,None,False,True,,2
+Mabinogi.g.en.resources:mainwindow.baml,checkBoxSavePassword:System.Windows.Controls.Grid.Row,None,False,True,,3
+Mabinogi.g.en.resources:mainwindow.baml,checkBoxSavePassword:System.Windows.FrameworkElement.VerticalAlignment,None,False,True,,Center
+Mabinogi.g.en.resources:mainwindow.baml,checkBoxSavePassword:System.Windows.FrameworkElement.HorizontalAlignment,None,False,True,,Center
+Mabinogi.g.en.resources:mainwindow.baml,buttonPatcher:System.Windows.Controls.Button.$Content,Button,True,True,,
+Mabinogi.g.en.resources:mainwindow.baml,buttonPatcher:System.Windows.Controls.ContentControl.Content,Button,True,True,,Download Patch
+Mabinogi.g.en.resources:mainwindow.baml,buttonPatcher:System.Windows.Controls.Grid.Column,None,False,True,,4
+Mabinogi.g.en.resources:mainwindow.baml,buttonPatcher:System.Windows.Controls.Grid.Row,None,False,True,,1
+Mabinogi.g.en.resources:mainwindow.baml,buttonPatcher:System.Windows.FrameworkElement.ToolTip,ToolTip,True,True,,Download the patch diff local version of the server.
+Mabinogi.g.en.resources:mainwindow.baml,buttonPatcher:System.Windows.FrameworkElement.Margin,None,False,True,,1
+Mabinogi.g.en.resources:mainwindow.baml,buttonLangPack:System.Windows.Controls.Button.$Content,Button,True,True,,
+Mabinogi.g.en.resources:mainwindow.baml,buttonLangPack:System.Windows.Controls.ContentControl.Content,Button,True,True,,Download language.pack
+Mabinogi.g.en.resources:mainwindow.baml,buttonLangPack:System.Windows.Controls.Grid.Column,None,False,True,,4
+Mabinogi.g.en.resources:mainwindow.baml,buttonLangPack:System.Windows.Controls.Grid.Row,None,False,True,,2
+Mabinogi.g.en.resources:mainwindow.baml,buttonLangPack:System.Windows.FrameworkElement.ToolTip,ToolTip,True,True,,"Download the latest language.pack. Please make sure if you run play in different countries. In that case, there is no need to override."
+Mabinogi.g.en.resources:mainwindow.baml,buttonLangPack:System.Windows.FrameworkElement.Margin,None,False,True,,1
+Mabinogi.g.en.resources:mainwindow.baml,checkBoxConnectLocal:System.Windows.Controls.CheckBox.$Content,CheckBox,True,True,,
+Mabinogi.g.en.resources:mainwindow.baml,checkBoxConnectLocal:System.Windows.Controls.ContentControl.Content,CheckBox,True,True,,Connect to Local
+Mabinogi.g.en.resources:mainwindow.baml,checkBoxConnectLocal:System.Windows.Controls.Grid.Column,None,False,True,,4
+Mabinogi.g.en.resources:mainwindow.baml,checkBoxConnectLocal:System.Windows.Controls.Grid.Row,None,False,True,,3
+Mabinogi.g.en.resources:mainwindow.baml,checkBoxConnectLocal:System.Windows.FrameworkElement.ToolTip,ToolTip,True,True,,"Connect to Emulation server, such as Aura."
+Mabinogi.g.en.resources:mainwindow.baml,checkBoxConnectLocal:System.Windows.FrameworkElement.HorizontalAlignment,None,False,True,,Center
+Mabinogi.g.en.resources:mainwindow.baml,checkBoxConnectLocal:System.Windows.FrameworkElement.VerticalAlignment,None,False,True,,Center
+Mabinogi.g.en.resources:mainwindow.baml,buttonLaunch:System.Windows.Controls.Button.$Content,Button,True,True,,
+Mabinogi.g.en.resources:mainwindow.baml,buttonLaunch:System.Windows.Controls.ContentControl.Content,Button,True,True,,Launch
+Mabinogi.g.en.resources:mainwindow.baml,buttonLaunch:System.Windows.Controls.Grid.Column,None,False,True,,5
+Mabinogi.g.en.resources:mainwindow.baml,buttonLaunch:System.Windows.Controls.Grid.Row,None,False,True,,1
+Mabinogi.g.en.resources:mainwindow.baml,buttonLaunch:System.Windows.Controls.Grid.RowSpan,None,False,True,,2
+Mabinogi.g.en.resources:mainwindow.baml,buttonLaunch:System.Windows.FrameworkElement.ToolTip,ToolTip,True,True,,Start the Mabinogi.
+Mabinogi.g.en.resources:mainwindow.baml,buttonLaunch:System.Windows.Controls.Button.IsDefault,None,False,True,,True
+Mabinogi.g.en.resources:mainwindow.baml,buttonLaunch:System.Windows.FrameworkElement.Margin,None,False,True,,"3,1"
+Mabinogi.g.en.resources:mainwindow.baml,checkBoxAutoboot:System.Windows.Controls.CheckBox.$Content,CheckBox,True,True,,
+Mabinogi.g.en.resources:mainwindow.baml,checkBoxAutoboot:System.Windows.Controls.ContentControl.Content,CheckBox,True,True,,Autoboot
+Mabinogi.g.en.resources:mainwindow.baml,checkBoxAutoboot:System.Windows.Controls.Grid.Column,None,False,True,,5
+Mabinogi.g.en.resources:mainwindow.baml,checkBoxAutoboot:System.Windows.Controls.Grid.Row,None,False,True,,3
+Mabinogi.g.en.resources:mainwindow.baml,checkBoxAutoboot:System.Windows.FrameworkElement.HorizontalAlignment,None,False,True,,Center
+Mabinogi.g.en.resources:mainwindow.baml,checkBoxAutoboot:System.Windows.FrameworkElement.VerticalAlignment,None,False,True,,Center
+Mabinogi.g.en.resources:mainwindow.baml,checkBoxAutoboot:System.Windows.UIElement.IsEnabled,None,False,True,,False
+Mabinogi.g.en.resources:mainwindow.baml,TabItem_2:System.Windows.Controls.TabItem.$Content,Text,True,True,,#Grid_2;
+Mabinogi.g.en.resources:mainwindow.baml,TabItem_2:System.Windows.Controls.HeaderedContentControl.Header,Label,True,True,,About
+Mabinogi.g.en.resources:mainwindow.baml,imageLogo:System.Windows.Controls.Image.$Content,None,False,True,,
+Mabinogi.g.en.resources:mainwindow.baml,imageLogo:System.Windows.Controls.Image.Source,None,False,True,,icon.ico
+Mabinogi.g.en.resources:mainwindow.baml,imageLogo:System.Windows.FrameworkElement.Margin,None,False,True,,10
+Mabinogi.g.en.resources:mainwindow.baml,imageLogo:System.Windows.Controls.Grid.RowSpan,None,False,True,,4
+Mabinogi.g.en.resources:mainwindow.baml,imageLogo:System.Windows.FrameworkElement.Width,None,False,True,,64
+Mabinogi.g.en.resources:mainwindow.baml,imageLogo:System.Windows.FrameworkElement.Height,None,False,True,,64
+Mabinogi.g.en.resources:mainwindow.baml,imageLogo:System.Windows.FrameworkElement.Cursor,None,False,True,,Hand
+Mabinogi.g.en.resources:mainwindow.baml,imageLogo:System.Windows.FrameworkElement.VerticalAlignment,None,False,True,,Top
+Mabinogi.g.en.resources:mainwindow.baml,imageLogo:System.Windows.FrameworkElement.HorizontalAlignment,None,False,True,,Center
+Mabinogi.g.en.resources:mainwindow.baml,textBoxAppName:System.Windows.Controls.TextBlock.$Content,Text,True,True,,
+Mabinogi.g.en.resources:mainwindow.baml,textBoxAppName:System.Windows.Controls.Grid.Column,None,False,True,,1
+Mabinogi.g.en.resources:mainwindow.baml,textBoxAppName:System.Windows.Controls.TextBlock.Text,Text,True,True,,MabiLauncher Plus
+Mabinogi.g.en.resources:mainwindow.baml,textBoxAppName:System.Windows.FrameworkElement.VerticalAlignment,None,False,True,,Center
+Mabinogi.g.en.resources:mainwindow.baml,textBoxAppName:System.Windows.Controls.TextBlock.FontSize,None,True,True,,18
+Mabinogi.g.en.resources:mainwindow.baml,textBoxDescription:System.Windows.Controls.TextBlock.$Content,Text,True,True,,
+Mabinogi.g.en.resources:mainwindow.baml,textBoxDescription:System.Windows.Controls.Grid.Column,None,False,True,,1
+Mabinogi.g.en.resources:mainwindow.baml,textBoxDescription:System.Windows.Controls.Grid.Row,None,False,True,,1
+Mabinogi.g.en.resources:mainwindow.baml,textBoxDescription:System.Windows.Controls.TextBlock.Text,Text,True,True,,Mabinogi Lightweight Custom Launcher
+Mabinogi.g.en.resources:mainwindow.baml,textBoxDescription:System.Windows.FrameworkElement.VerticalAlignment,None,False,True,,Center
+Mabinogi.g.en.resources:mainwindow.baml,textBlockVersion:System.Windows.Controls.TextBlock.$Content,Text,True,True,,
+Mabinogi.g.en.resources:mainwindow.baml,textBlockVersion:System.Windows.Controls.Grid.Column,None,False,True,,1
+Mabinogi.g.en.resources:mainwindow.baml,textBlockVersion:System.Windows.Controls.Grid.Row,None,False,True,,2
+Mabinogi.g.en.resources:mainwindow.baml,textBlockVersion:System.Windows.FrameworkElement.VerticalAlignment,None,False,True,,Center
+Mabinogi.g.en.resources:mainwindow.baml,textBlockCopyrights:System.Windows.Controls.TextBlock.$Content,Text,True,True,,
+Mabinogi.g.en.resources:mainwindow.baml,textBlockCopyrights:System.Windows.Controls.Grid.Column,None,False,True,,1
+Mabinogi.g.en.resources:mainwindow.baml,textBlockCopyrights:System.Windows.Controls.Grid.Row,None,False,True,,3
+Mabinogi.g.en.resources:mainwindow.baml,textBlockCopyrights:System.Windows.Controls.TextBlock.Text,Text,True,True,,Copyright © 2012 By Logue &lt;http://logue.be/&gt;
+Mabinogi.g.en.resources:mainwindow.baml,textBlockCopyrights:System.Windows.FrameworkElement.VerticalAlignment,None,False,True,,Center
+Mabinogi.g.en.resources:mainwindow.baml,textBlockCopyrights:System.Windows.FrameworkElement.Cursor,None,False,True,,Hand
+Mabinogi.g.en.resources:mainwindow.baml,textBlockCopyrights:System.Windows.Controls.TextBlock.TextDecorations,None,False,True,,Underline
+Mabinogi.g.en.resources:mainwindow.baml,textBlockCopyrights:System.Windows.Controls.TextBlock.Foreground,None,False,True,,\#FF0000FF
+Mabinogi.g.en.resources:app.baml,Application_1:MabiLauncher.App.$Content,None,True,True,,
+Mabinogi.g.en.resources:app.baml,ResourceDictionary_2:System.Windows.ResourceDictionary.Source,None,True,False,,StringResources.xaml
+Mabinogi.g.en.resources:app.baml,XmlDataProvider_1:System.Windows.Data.XmlDataProvider.$Content,None,False,True,,
+Mabinogi.g.en.resources:app.baml,XmlDataProvider_1:System.Windows.Data.XmlDataProvider.Source,None,True,False,,ServerList.xml
+Mabinogi.g.en.resources:app.baml,XmlDataProvider_1:System.Windows.Data.XmlDataProvider.XPath,None,True,True,,ServerList/Server
+Mabinogi.g.en.resources:app.baml,BitmapImage_1:System.Windows.Media.Imaging.BitmapImage.$Content,None,False,True,,
+Mabinogi.g.en.resources:app.baml,BitmapImage_1:System.Windows.Media.Imaging.BitmapImage.CreateOptions,None,True,False,,IgnoreImageCache
+Mabinogi.g.en.resources:app.baml,BitmapImage_1:System.Windows.Media.Imaging.BitmapImage.CacheOption,None,True,False,,OnLoad
+Mabinogi.g.en.resources:app.baml,BitmapImage_1:System.Windows.Media.Imaging.BitmapImage.UriSource,None,True,False,,Images\\alert.png
+Mabinogi.g.en.resources:app.baml,BitmapImage_2:System.Windows.Media.Imaging.BitmapImage.$Content,None,False,True,,
+Mabinogi.g.en.resources:app.baml,BitmapImage_2:System.Windows.Media.Imaging.BitmapImage.CreateOptions,None,True,False,,IgnoreImageCache
+Mabinogi.g.en.resources:app.baml,BitmapImage_2:System.Windows.Media.Imaging.BitmapImage.CacheOption,None,True,False,,OnLoad
+Mabinogi.g.en.resources:app.baml,BitmapImage_2:System.Windows.Media.Imaging.BitmapImage.UriSource,None,True,False,,Images\\bg.png
+Mabinogi.g.en.resources:app.baml,SolidColorBrush_1:System.Windows.Media.SolidColorBrush.$Content,None,False,True,,
+Mabinogi.g.en.resources:app.baml,SolidColorBrush_1:System.Windows.Media.SolidColorBrush.Color,None,False,True,,\#99FFFFFF

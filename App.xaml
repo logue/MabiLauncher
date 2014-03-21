@@ -1,0 +1,17 @@
+﻿<Application 
+	x:Uid="Application_1" x:Class="MabiLauncher.App"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Startup="Application_Startup">
+	<Application.Resources>
+		<ResourceDictionary x:Uid="ResourceDictionary_1">
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary x:Uid="ResourceDictionary_2" Source="StringResources.xaml" />
+			</ResourceDictionary.MergedDictionaries>
+			<XmlDataProvider x:Uid="XmlDataProvider_1" x:Key="ServerList" Source="ServerList.xml" XPath="ServerList/Server" />
+			<BitmapImage x:Uid="BitmapImage_1" x:Key="iconAlert" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="Images\alert.png"/>
+			<BitmapImage x:Uid="BitmapImage_2" x:Key="ImageBackground" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="Images\bg.png"/>
+			<SolidColorBrush x:Uid="SolidColorBrush_1" x:Key="TextBox" Color="#99FFFFFF"/>
+		</ResourceDictionary>
+	</Application.Resources>
+</Application>

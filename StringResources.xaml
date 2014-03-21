@@ -1,0 +1,30 @@
+﻿<ResourceDictionary 
+  x:Uid="ResourceDictionary_1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:system="clr-namespace:System;assembly=mscorlib">
+  
+  <!-- String resource that can be localized -->
+	<!-- UnhandledExceptionCatcher.cs -->
+	<system:String x:Uid="system:String_1" x:Key="tarminateMessageMain">A problem caused this program to stop working.</system:String>
+	<system:String x:Uid="system:String_2" x:Key="tarminateMessageContent">This program has terminated.</system:String>
+	<system:String x:Uid="system:String_3" x:Key="tarminateMessageContentOutput">This program is terminating.{0}Do you want to display information about this problem?.</system:String>
+	<system:String x:Uid="system:String_4" x:Key="luancherNotSameVersionMsg">Local Version and Server Version does not same. Are you sure you want to continue?</system:String>
+	<system:String x:Uid="system:String_5" x:Key="luancherInvaluedVersion">Version value is invalid.</system:String>
+	<system:String x:Uid="system:String_6" x:Key="luancherInvaluedVersionMsg">Server version value does not to be smaller than Local version value.</system:String>
+	<system:String x:Uid="system:String_7" x:Key="luancherServerOffline">Patch Server is offline.</system:String>
+	<system:String x:Uid="system:String_8" x:Key="luancherServerOfflineMsg">Patch Server is currently down. Please try again later.</system:String>
+	<system:String x:Uid="system:String_9" x:Key="luancherSavePassword">Saving password in local makes security risk, such as account hacking.</system:String>
+	<system:String x:Uid="system:String_10" x:Key="luancherDownloadSuccess">Download successfully.</system:String>
+	<system:String x:Uid="system:String_11" x:Key="luancherDownloadFailure">Download failure.</system:String>
+	<system:String x:Uid="system:String_12" x:Key="patcherInit">Initializing...</system:String>
+	<system:String x:Uid="system:String_13" x:Key="patcherInitCreateTempDir">Create Temporary directory...</system:String>
+	<system:String x:Uid="system:String_14" x:Key="patcherInitGetDownloadList">Download failure.</system:String>
+	<system:String x:Uid="system:String_15" x:Key="patcherInitCheck">Checking {0}.txt...</system:String>
+	<system:String x:Uid="system:String_16" x:Key="patcherLangPack">Downloading language.pack</system:String>
+	<system:String x:Uid="system:String_17" x:Key="patcherDownloader">Downloading partial patch file and check md5sum...</system:String>
+	<system:String x:Uid="system:String_18" x:Key="patcherDownloaderDownload">Downloading file. ({0} / {1})</system:String>
+	<system:String x:Uid="system:String_19" x:Key="patcherMarge">Merging...</system:String>
+	<system:String x:Uid="system:String_20" x:Key="patcherMargeMargeing">Merging partial patch file. ({0} / {1})</system:String>
+	<system:String x:Uid="system:String_21" x:Key="patcherExtract">Extracting...</system:String>
+	<system:String x:Uid="system:String_22" x:Key="patcherExtractExtracting">Extracting file. ({0} / {1})</system:String>
+</ResourceDictionary>

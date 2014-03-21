@@ -1,0 +1,37 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- Adds the build action 'LocBamlCsv' -->
+  <ItemGroup>
+    <AvailableItemName Include="LocBamlCsv" />
+  </ItemGroup>
+
+  
+  <Target Name="CreateSatelliteAssemblies" DependsOnTargets="$(CreateSatelliteAssembliesDependsOn)">
+    <!-- Locbaml needs the runtime assemblies in the intermediate dir -->
+    <Copy SourceFiles="$(ProjectDir)Build\locBaml.exe" DestinationFolder="$(IntermediateOutputPath)" />
+    <Copy SourceFiles="@(ReferenceCopyLocalPaths)" DestinationFiles="@(ReferenceCopyLocalPaths->'$(IntermediateOutputPath)%(DestinationSubDirectory)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+
+    <!-- Locbaml, do it in 4 steps. 
+              1) parse us culture and create csv. 
+              2) merge new csv with last known german csv 
+              3) generate a new assembly from the merged csv
+              4) strip translation CSV -->
+    <MakeDir Directories="$(IntermediateOutputPath)%(LocBamlCsv.Culture)" />
+    <Exec Command='LocBaml /parse $(UICulture)\$(TargetName).resources.dll /out:"$(ProjectDir)Translation\translate.csv"'
+          WorkingDirectory="$(IntermediateOutputPath)" />
+    <Exec Command='"$(ProjectDir)Build\MergeLocBamlCsv" "%(LocBamlCsv.FullPath)" "$(ProjectDir)Translation\translate.csv"' />
+    <Exec Command='LocBaml /generate $(UICulture)\$(TargetName).resources.dll /trans:"%(LocBamlCsv.FullPath)" /out:%(LocBamlCsv.Culture) /cul:%(LocBamlCsv.Culture)'
+          WorkingDirectory="$(IntermediateOutputPath)" Outputs="$(IntermediateOutputPath)%(LocBamlCsv.Culture)\$(TargetName).resources.dll" />
+    <Exec Command='"$(ProjectDir)Build\StripLocBamlCsv" "%(LocBamlCsv.FullPath)"'/>
+    <Delete Files="$(IntermediateOutputPath)\locbaml.exe" />
+
+    <!-- Add the new sattelite dll's to the list, so they are added to the manifest.-->
+    <ItemGroup>
+      <IntermediateSatelliteAssembliesWithTargetPath Include="$(IntermediateOutputPath)%(LocBamlCsv.Culture)\$(TargetName).resources.dll">
+        <Culture>%(LocBamlCsv.Culture)</Culture>
+        <TargetPath>%(LocBamlCsv.Culture)\$(TargetName).resources.dll</TargetPath>
+      </IntermediateSatelliteAssembliesWithTargetPath>
+    </ItemGroup>
+
+  </Target>
+
+</Project>
