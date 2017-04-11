@@ -1,6 +1,6 @@
 ﻿/*!
  * Mabinogi Patcher Class
- * Copyright (C) 2012 by Logue <http://logue.be/>
+ * Copyright (C) 2012,2017 by Logue <http://logue.be/>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License version 3
@@ -41,7 +41,12 @@ namespace MabiLauncher
 		private DirectoryInfo ExtractedDirInfo;
 
 		private Dictionary<string, string> DownloadList;
-
+        /// <summary>
+        /// コンストラクタ
+        /// </summary>
+        /// <param name="s">サーバーのURL</param>
+        /// <param name="f">クライアント側ののバージョン</param>
+        /// <param name="t">サーバーのバージョン</param>
 		public Patcher(Uri s, UInt32 f, UInt32 t){
 			this.From = f;
 			this.To = t;
@@ -53,45 +58,64 @@ namespace MabiLauncher
 			this.ExtractDir = self_dir + "_mltemp_\\extracted\\";
 			this.ExtractedDirInfo = new DirectoryInfo(this.ExtractDir);
 		}
+        /// <summary>
+        /// デストラクタ
+        /// </summary>
 		~Patcher(){
+            // 解凍したファイルをディレクトリごと削除する
 			if (ExtractedDirInfo.Exists == true)
 				this.ExtractedDirInfo.Delete(true);
+            // 一時ファイルディレクトリを削除するb
 			if (TempDirInfo.Exists == true)
 				this.TempDirInfo.Delete(true);
 			DirectoryInfo di = new DirectoryInfo(self_dir + "_mltemp_");
 			if (di.Exists == true)
 				di.Delete(true);
 		}
-
+        /// <summary>
+        /// パッチを取得する
+        /// </summary>
+        /// <returns></returns>
 		public bool Patch()
 		{
-			Initialize();
+            // 初期化
+            Initialize();
+            // 言語パックをダウンロード
 			GetLanguagePack(this.To);
-			if (Downloader() == true)
+            // ダウンロードが完了したときの処理
+            if (Downloader() == true)
 			{
-				Marge();
+                // 結合
+				Merge();
+                // 回答
 				Extract();
 				return true;
 			}
 			return false;
 		}
-
+        /// <summary>
+        /// パッチを当てる
+        /// </summary>
+        /// <param name="From">ローカルのバージョン</param>
+        /// <param name="To">サーバーのバージョン</param>
+        /// <returns></returns>
 		public bool Patch(uint From, uint To){
 			this.From = From;
 			this.To = To;
 			Initialize();
 			GetLanguagePack(this.To);
 			if (Downloader() == true){
-				Marge();
+				Merge();
 				Extract();
 				return true;
 			}
 			return false;
 		}
-
+        /// <summary>
+        /// 一時ディレクトリの作成
+        /// </summary>
 		private void DirectorySetup(){
-			// 0, Make temp dir
-
+			// 一時ディレクトリ
 			if (TempDirInfo.Exists == false)
 			{
 				TempDirInfo.Create();
@@ -101,6 +125,7 @@ namespace MabiLauncher
 				TempDirInfo.Delete(true);
 				TempDirInfo.Create();
 			}
+            // 解凍ディレクトリ
 			if (ExtractedDirInfo.Exists == false)
 			{
 				ExtractedDirInfo.Create();
@@ -111,12 +136,19 @@ namespace MabiLauncher
 				ExtractedDirInfo.Create();
 			}
 		}
-		
+		/// <summary>
+        /// 初期化
+        /// </summary>
+        /// <returns>成功したか？</returns>
 		private bool Initialize() {
 			DirectorySetup();
+            // サーバー上に存在するパッチ定義ファイルの命名規則
+            // ローカルのバージョンが500でサーバーのバージョンが505だった場合、500_to_505.txtを取得する
+ 
 			PatchFileListName = From.ToString() + "_to_" + To.ToString();
 			// 1, Get main_version download list
 			// [from]_to_[to].txt
+ 
 			ProgressDialog pd = new ProgressDialog();
 			pd.Title = "Mabinogi Patcher";
 			//pd.Caption = "1, Initializing...";
@@ -126,17 +158,19 @@ namespace MabiLauncher
 			pd.Message = String.Format((string)Application.Current.FindResource("patcherInitCheck"), this.PatchFileListName + ".txt");
 			pd.Detail = Remote + this.PatchFileListName + ".txt";
 			pd.ShowDialog(ProgressDialog.PROGDLG.MarqueeProgress);
-
+            // キャンセルボタンが押されたときのバンドら
 			if (pd.HasUserCancelled)
 			{
 				pd.CloseDialog();
 				return false;
 			}
-			
-			Console.WriteLine("Checking {0}.txt...", this.PatchFileListName);
+
+            // サーバー上に存在するパッチファイルの定義を取得する
+            Console.WriteLine("Checking {0}.txt...", this.PatchFileListName);
 			if (!Download(Remote + this.PatchFileListName + ".txt", TempDir))
 			{
 				pd.Value = 2;
+                // 存在しない場合は、５
 				PatchFileListName = this.To.ToString() + "_full";
 				pd.Detail = Remote + this.PatchFileListName + ".txt";
 				pd.Message = String.Format((string)Application.Current.FindResource("patcherInitCheck"), this.PatchFileListName + ".txt");
@@ -244,12 +278,12 @@ namespace MabiLauncher
 			}
 		}
 
-		private void Marge(){
+		private void Merge(){
 			// 4, Combine partial patch file.
 			ProgressDialog pd = new ProgressDialog();
 			pd.Title = "Mabinogi Patcher";
 			//pd.Caption = "3, Combine";
-			pd.Caption = (string)Application.Current.FindResource("patcherMarge");
+			pd.Caption = (string)Application.Current.FindResource("patcherMerge");
 			pd.Value = 0;
 			pd.Maximum = (uint)DownloadList.Count;
 			pd.ShowDialog();
@@ -421,11 +455,14 @@ namespace MabiLauncher
 			bool result = false;
 			foreach (ZipStorer.ZipFileEntry entry in dir)
 			{
-				path = Path.Combine(destinationPath, entry.FilenameInZip);
+                String fileName = entry.FilenameInZip;
+                path = Path.Combine(destinationPath, fileName);
 				pd.Message = String.Format((string)Application.Current.FindResource("patcherExtractExtracting"), pd.Value, dir.Count);
-				pd.Detail = entry.FilenameInZip;
-				if (entry.IsDirectory())
-				{
+				pd.Detail = fileName;
+                
+
+                if (fileName.EndsWith("/"))
+                {
 					if ( !Directory.Exists(path.ToString()) )
 						Directory.CreateDirectory(path.ToString());
 				}
