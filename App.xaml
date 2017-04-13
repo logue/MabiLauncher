@@ -4,14 +4,19 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	Startup="Application_Startup">
 	<Application.Resources>
-		<ResourceDictionary x:Uid="ResourceDictionary_1">
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary x:Uid="ResourceDictionary_2" Source="StringResources.xaml" />
-			</ResourceDictionary.MergedDictionaries>
-			<XmlDataProvider x:Uid="XmlDataProvider_1" x:Key="ServerList" Source="ServerList.xml" XPath="ServerList/Server" />
-			<BitmapImage x:Uid="BitmapImage_1" x:Key="iconAlert" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="Images\alert.png"/>
-			<BitmapImage x:Uid="BitmapImage_2" x:Key="ImageBackground" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="Images\bg.png"/>
-			<SolidColorBrush x:Uid="SolidColorBrush_1" x:Key="TextBox" Color="#99FFFFFF"/>
-		</ResourceDictionary>
-	</Application.Resources>
+        <ResourceDictionary x:Uid="ResourceDictionary_1">
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary x:Uid="ResourceDictionary_2" Source="StringResources.xaml" />
+                <!-- MahApps.Metro resource dictionaries. Make sure that all file names are Case Sensitive! -->
+                <ResourceDictionary x:Uid="ResourceDictionary_3" Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary x:Uid="ResourceDictionary_5" Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <!-- Accent and AppTheme setting -->
+                <ResourceDictionary x:Uid="ResourceDictionary_6" Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary x:Uid="ResourceDictionary_7" Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <!-- サーバーの定義書 -->
+            <XmlDataProvider x:Uid="XmlDataProvider_1" x:Key="ServerList" Source="ServerList.xml" XPath="ServerList/Server" />
+            <BooleanToVisibilityConverter x:Uid="BooleanToVisibilityConverter_1" x:Key="BooleanToVisibilityConverter" />
+        </ResourceDictionary>
+    </Application.Resources>
 </Application>

@@ -23,7 +23,7 @@
 	<system:String x:Uid="system:String_16" x:Key="patcherLangPack">Downloading language.pack</system:String>
 	<system:String x:Uid="system:String_17" x:Key="patcherDownloader">Downloading partial patch file and check md5sum...</system:String>
 	<system:String x:Uid="system:String_18" x:Key="patcherDownloaderDownload">Downloading file. ({0} / {1})</system:String>
-	<system:String x:Uid="system:String_19" x:Key="patcherMarge">Merging...</system:String>
+	<system:String x:Uid="system:String_19" x:Key="patcherMerge">Merging...</system:String>
 	<system:String x:Uid="system:String_20" x:Key="patcherMargeMargeing">Merging partial patch file. ({0} / {1})</system:String>
 	<system:String x:Uid="system:String_21" x:Key="patcherExtract">Extracting...</system:String>
 	<system:String x:Uid="system:String_22" x:Key="patcherExtractExtracting">Extracting file. ({0} / {1})</system:String>

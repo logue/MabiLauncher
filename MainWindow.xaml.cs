@@ -4,18 +4,17 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Xml;
+using MahApps.Metro.Controls;
 
-#if USE_TASK_DIALOG
-using Microsoft.WindowsAPICodePack.Dialogs;
-#endif
 namespace MabiLauncher
 {
 	/// <summary>
 	/// Logic for MainWindow.xaml
 	/// </summary>
-	public partial class MainWindow : Window
-	{
-		private MabiEnvironment env;
+	public partial class MainWindow : MetroWindow
+
+    {
+        private MabiEnvironment env;
 		private Patcher p;
 		private uint Local;
 		private uint Server;
@@ -225,16 +224,10 @@ namespace MabiLauncher
 			}
 			else
 			{
-				if (p.Patch(this.Local, this.Server))
-				{
-					this.textBoxLocal.Text = this.Server.ToString();
-					this.Local = this.Server;
-					this.buttonPatcher.IsEnabled = false;
-				}
-				else
-				{
-					this.Infomation("Error" ,"Aborted.");
-				}
+                p.Patch(this.Local, this.Server);
+				this.textBoxLocal.Text = this.Server.ToString();
+				this.Local = this.Server;
+				this.buttonPatcher.IsEnabled = false;
 			}
 		}
 

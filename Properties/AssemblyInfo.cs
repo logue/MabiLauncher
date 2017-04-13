@@ -12,7 +12,7 @@ using System.Windows;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Logue")]
 [assembly: AssemblyProduct("Mabinogi Launcher Plus")]
-[assembly: AssemblyCopyright("Copyright © 2012,2014 By Logue")]
+[assembly: AssemblyCopyright("Copyright © 2012,2017 By Logue")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -51,6 +51,6 @@ using System.Windows;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.3.0.2")]
-[assembly: AssemblyFileVersion("1.3.0.2")]
-[assembly: GuidAttribute("B70B9354-EF08-495e-A587-871FEB042089")]
+[assembly: AssemblyVersion("1.4.0.0")]
+[assembly: AssemblyFileVersion("1.4.0.0")]
+[assembly: Guid("B70B9354-EF08-495e-A587-871FEB042089")]

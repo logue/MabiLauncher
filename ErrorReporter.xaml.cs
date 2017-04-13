@@ -11,6 +11,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Xml;
+using System.Windows.Interop;
+using System.Drawing;
 
 namespace MabiLauncher
 {
@@ -24,6 +26,10 @@ namespace MabiLauncher
 			InitializeComponent();
 			this.textBoxDetail.Text = detail;
 			this.textBoxMessage.Text = msg;
+            var icon = SystemIcons.Error;
+            this.iconAlert.Source =
+                Imaging.CreateBitmapSourceFromHIcon(
+                    icon.Handle, Int32Rect.Empty, BitmapSizeOptions.FromEmptyOptions());
 		}
 
 		private void Exit_Click(object sender, RoutedEventArgs e)
